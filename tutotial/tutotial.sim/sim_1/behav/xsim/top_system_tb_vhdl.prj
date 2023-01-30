@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../sources/prescaler.vhd" \
+"../../../../sources/shifter16.vhd" \
+"../../../../sources/top_system.vhd" \
+"../../../../sources/top_system_tb.vhd" \
+
+# Do not sort compile order
+nosort
