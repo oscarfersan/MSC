@@ -25,10 +25,10 @@ begin
 
   shiff : entity work.shifter16
     port map (
-      clk         => pre_out,
+      clk         => clk,
       rst         => rst,
-      ce          => '1',            --diseño asíncrono
-   -- ce          => pre_out,        --diseño síncrono
+      --ce          => '1',            --diseño asíncrono
+      ce          => pre_out,        --diseño síncrono
       polarity    => polarity,
       direction   => direction,
       shifter_out => led);

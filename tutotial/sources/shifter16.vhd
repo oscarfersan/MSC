@@ -17,7 +17,7 @@ architecture rtl of shifter16 is
   signal shf_aux : std_logic_vector(15 downto 0);
 begin  --  
 -- contador  mod 16
-  process (all)
+  process (clk,rst)
   begin  -- process
     if rst = '1' then
       c_out     <= (others => '0');
@@ -33,7 +33,7 @@ begin  --
   end process;
 
 --decodificador 4:16
-  process(all)
+  process(c_out)
     variable a_int : integer;
   begin
     a_int := to_integer(c_out);

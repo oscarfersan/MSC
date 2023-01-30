@@ -12,12 +12,12 @@ end prescaler;
 
 architecture for_prescaler of prescaler is
 
-  constant CLKDIV      : integer := 5e6;   -- para la implementación
---  constant CLKDIV      : integer := 25;  -- para la simulación
+  --constant CLKDIV      : integer := 5e6;   -- para la implementación
+  constant CLKDIV      : integer := 25;  -- para la simulación
   signal   counter_reg : integer range 0 to CLKDIV-1;
 begin  -- for_prescaler
 
-  process (all)
+  process (clk,rst)
   begin  -- process
     if rst = '1' then
       counter_reg   <= 0;
@@ -29,18 +29,7 @@ begin  -- for_prescaler
       end if;
     end if;
   end process;
-
-  process (all)
-  begin  -- process
-    if rst = '1' then
-      pre_out   <= '0';
-    elsif clk'event and clk = '1' then
-      if counter_reg = CLKDIV-1 then
-        pre_out <= '1';
-      else
-        pre_out <= '0';
-      end if;
-    end if;
-  end process;
+  
+  pre_out <= '1' when counter_reg = CLKDIV-1 else '0';
 
 end for_prescaler;
