@@ -2,11 +2,11 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Mon Jan 30 09:48:22 2023
-# Process ID: 13140
+# Start of session at: Mon Feb 20 09:24:53 2023
+# Process ID: 6732
 # Current directory: C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/tutotial/tutotial.runs/synth_1
-# Command line: vivado.exe -log shifter16.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source shifter16.tcl
-# Log file: C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/tutotial/tutotial.runs/synth_1/shifter16.vds
+# Command line: vivado.exe -log top_system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_system.tcl
+# Log file: C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/tutotial/tutotial.runs/synth_1/top_system.vds
 # Journal file: C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/tutotial/tutotial.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source shifter16.tcl -notrace
+source top_system.tcl -notrace
