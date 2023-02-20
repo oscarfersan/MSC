@@ -13,7 +13,7 @@ end cnt_display_tb;
 
 architecture sim of cnt_display_tb is
 
-  constant CNT1 : time:= ;                 -- Indicar valor
+  constant CNT1 : time:= 7000ns;                 -- Indicar valor
 
   signal CLK_i         : std_logic := '0';
   signal RST_i         : std_logic;
@@ -52,7 +52,7 @@ begin  -- sim
     wait for 142 ns;
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '1';
-    DATO_BCD_i    <=     ;-- Indicar valor
+    DATO_BCD_i    <= "0001100001100001";-- Indicar valor
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '0';
     wait for CNT1;
@@ -60,56 +60,56 @@ begin  -- sim
 
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '1';
-    DATO_BCD_i    <=     ;-- Indicar valor
+    DATO_BCD_i    <=  "1001111111111111";-- Indicar valor
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '0';
     wait for CNT1;
 
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '1';
-    DATO_BCD_i    <=     ;-- Indicar valor
+    DATO_BCD_i    <=  "0001100001101011";-- Indicar valor
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '0';
     wait for CNT1;
 
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '1';
-    DATO_BCD_i    <=     ;-- Indicar valor
+    DATO_BCD_i    <= x"3865";-- Indicar valor
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '0';
     wait for CNT1;
 
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '1';
-    DATO_BCD_i    <=     ;-- Indicar valor
+    DATO_BCD_i    <= x"3AD5";-- Indicar valor
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '0';
     wait for CNT1;
 
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '1';
-    DATO_BCD_i    <=     ;-- Indicar valor
+    DATO_BCD_i    <= x"0036"    ;-- Indicar valor
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '0';
     wait for CNT1;
 
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '1';
-    DATO_BCD_i    <=     ;-- Indicar valor
+    DATO_BCD_i    <=   x"4839"  ;-- Indicar valor
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '0';
     wait for CNT1;
 
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '1';
-    DATO_BCD_i    <=     ;-- Indicar valor
+    DATO_BCD_i    <=  x"0386"   ;-- Indicar valor
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '0';
     wait for CNT1;
 
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '1';
-    DATO_BCD_i    <=     ;-- Indicar valor
+    DATO_BCD_i    <=  x"036e"   ;-- Indicar valor
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '0';
     wait for CNT1;
