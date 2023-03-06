@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log shifter16.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source shifter16.tcl
+EAStep vivado -log top_system.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_system.tcl
