@@ -37,9 +37,6 @@ read_vhdl -library xil_defaultlib C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado1/sources/cnt_display.xdc
-set_property used_in_implementation false [get_files C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado1/sources/cnt_display.xdc]
-
 
 synth_design -top cnt_display -part xc7a35tcpg236-1
 

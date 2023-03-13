@@ -7,3 +7,5 @@
 ---
 
 ## [Unreleased]
+
+- ~~PR~~ - Entrega de apartado 1
