@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Apr  1 11:55:21 2023
+# Process ID: 7588
+# Current directory: C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado2/apartado2.runs/synth_1
+# Command line: vivado.exe -log f_meter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source f_meter.tcl
+# Log file: C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado2/apartado2.runs/synth_1/f_meter.vds
+# Journal file: C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado2/apartado2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source f_meter.tcl -notrace
