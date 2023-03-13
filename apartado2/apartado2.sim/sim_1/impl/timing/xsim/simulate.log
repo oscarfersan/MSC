@@ -1,0 +1,5 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+Failure: FIN CONTROLADO DE LA SIMULACI�N
+Time: 8 ms  Iteration: 0  Process: /f_meter_tb/line__49  File: C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado2/sources/f_meter_tb.vhd
+$finish called at time : 8 ms : File "C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado2/sources/f_meter_tb.vhd" Line 64

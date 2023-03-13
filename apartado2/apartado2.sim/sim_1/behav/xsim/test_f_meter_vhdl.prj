@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../sources/cnt_display.vhd" \
+"../../../../sources/f_meter.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../sources/test_f_meter.vhd" \
+
+# Do not sort compile order
+nosort
