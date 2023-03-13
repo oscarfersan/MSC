@@ -1,5 +1,0 @@
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-Failure: FIN CONTROLADO DE LA SIMULACION
-Time: 63320 ns  Iteration: 0  Process: /cnt_display_tb/line__49  File: C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado1/sources/cnt_display_tb.vhd
-$finish called at time : 63320 ns : File "C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado1/sources/cnt_display_tb.vhd" Line 117
