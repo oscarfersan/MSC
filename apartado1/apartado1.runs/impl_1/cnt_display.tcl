@@ -74,7 +74,6 @@ set rc [catch {
   set_property ip_output_repo C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado1/apartado1.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado1/apartado1.runs/synth_1/cnt_display.dcp
-  read_xdc C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado1/sources/cnt_display.xdc
   link_design -top cnt_display -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -144,24 +143,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  catch { write_mem_info -force cnt_display.mmi }
-  write_bitstream -force cnt_display.bit 
-  catch {write_debug_probes -quiet -force cnt_display}
-  catch {file copy -force cnt_display.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

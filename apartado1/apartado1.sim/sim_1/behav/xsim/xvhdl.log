@@ -1,2 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado1/sources/cnt_display.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cnt_display
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado1/sources/cnt_display_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity cnt_display_tb

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="cnt_display_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="cnt_display_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="31624998830fs"></ZoomStartTime>
+      <ZoomEndTime time="31625005851fs"></ZoomEndTime>
+      <Cursor1Time time="31625000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject type="divider" fp_name="divider22">
+      <obj_property name="label">Entrada</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_display_tb/DUT/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_display_tb/DUT/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_display_tb/DUT/DATO_BCD" type="array">
+      <obj_property name="ElementShortName">DATO_BCD[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DATO_BCD[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_display_tb/DUT/DATO_BCD_OK" type="logic">
+      <obj_property name="ElementShortName">DATO_BCD_OK</obj_property>
+      <obj_property name="ObjectShortName">DATO_BCD_OK</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider23">
+      <obj_property name="label">Salida</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_display_tb/DUT/AND_30" type="array">
+      <obj_property name="ElementShortName">AND_30[3:0]</obj_property>
+      <obj_property name="ObjectShortName">AND_30[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_display_tb/DUT/DP" type="logic">
+      <obj_property name="ElementShortName">DP</obj_property>
+      <obj_property name="ObjectShortName">DP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_display_tb/DUT/SEG_AG" type="array">
+      <obj_property name="ElementShortName">SEG_AG[6:0]</obj_property>
+      <obj_property name="ObjectShortName">SEG_AG[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider24">
+      <obj_property name="label">Sennales Internas</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_display_tb/DUT/counter_prescaler" type="other">
+      <obj_property name="ElementShortName">counter_prescaler</obj_property>
+      <obj_property name="ObjectShortName">counter_prescaler</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_display_tb/DUT/counter_prescaler_ce" type="logic">
+      <obj_property name="ElementShortName">counter_prescaler_ce</obj_property>
+      <obj_property name="ObjectShortName">counter_prescaler_ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_display_tb/DUT/counter_multiplexor" type="other">
+      <obj_property name="ElementShortName">counter_multiplexor</obj_property>
+      <obj_property name="ObjectShortName">counter_multiplexor</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_display_tb/DUT/current_dato_bcd" type="array">
+      <obj_property name="ElementShortName">current_dato_bcd[15:0]</obj_property>
+      <obj_property name="ObjectShortName">current_dato_bcd[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_display_tb/DUT/checked_dato_bcd" type="array">
+      <obj_property name="ElementShortName">checked_dato_bcd[15:0]</obj_property>
+      <obj_property name="ObjectShortName">checked_dato_bcd[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_display_tb/DUT/multiplexor_out" type="array">
+      <obj_property name="ElementShortName">multiplexor_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">multiplexor_out[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider28">
+      <obj_property name="label">Entidad Display</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_display_tb/UD/Data" type="other">
+      <obj_property name="ElementShortName">Data</obj_property>
+      <obj_property name="ObjectShortName">Data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_display_tb/UD/Displays" type="array">
+      <obj_property name="ElementShortName">Displays[4:1]</obj_property>
+      <obj_property name="ObjectShortName">Displays[4:1]</obj_property>
+   </wvobject>
+</wave_config>
