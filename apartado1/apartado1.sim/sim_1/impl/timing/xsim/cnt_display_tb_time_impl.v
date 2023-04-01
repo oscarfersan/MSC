@@ -1,7 +1,7 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-// Date        : Sun Mar 12 11:03:33 2023
+// Date        : Sat Apr  1 12:25:42 2023
 // Host        : LAPTOP-BQSK3RO4 running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode timesim -nolib -sdf_anno true -force -file
 //               C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado1/apartado1.sim/sim_1/impl/timing/xsim/cnt_display_tb_time_impl.v
@@ -13,7 +13,7 @@
 `timescale 1 ps / 1 ps
 `define XIL_TIMING
 
-(* ECO_CHECKSUM = "c53c369f" *) 
+(* ECO_CHECKSUM = "7d4f9c9b" *) 
 (* NotValidForBitStream *)
 module cnt_display
    (CLK,
@@ -61,8 +61,6 @@ module cnt_display
   wire \SEG_AG_OBUF[6]_inst_i_23_n_0 ;
   wire \SEG_AG_OBUF[6]_inst_i_24_n_0 ;
   wire \SEG_AG_OBUF[6]_inst_i_25_n_0 ;
-  wire \SEG_AG_OBUF[6]_inst_i_26_n_0 ;
-  wire \SEG_AG_OBUF[6]_inst_i_27_n_0 ;
   wire \SEG_AG_OBUF[6]_inst_i_2_n_0 ;
   wire \SEG_AG_OBUF[6]_inst_i_3_n_0 ;
   wire \SEG_AG_OBUF[6]_inst_i_4_n_0 ;
@@ -93,6 +91,7 @@ end
   OBUF \AND_30_OBUF[0]_inst 
        (.I(AND_30_OBUF[0]),
         .O(AND_30[0]));
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \AND_30_OBUF[0]_inst_i_1 
@@ -102,7 +101,7 @@ end
   OBUF \AND_30_OBUF[1]_inst 
        (.I(AND_30_OBUF[1]),
         .O(AND_30[1]));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \AND_30_OBUF[1]_inst_i_1 
@@ -112,7 +111,7 @@ end
   OBUF \AND_30_OBUF[2]_inst 
        (.I(AND_30_OBUF[2]),
         .O(AND_30[2]));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \AND_30_OBUF[2]_inst_i_1 
@@ -122,7 +121,7 @@ end
   OBUF \AND_30_OBUF[3]_inst 
        (.I(AND_30_OBUF[3]),
         .O(AND_30[3]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \AND_30_OBUF[3]_inst_i_1 
@@ -195,7 +194,7 @@ end
   OBUF \SEG_AG_OBUF[0]_inst 
        (.I(SEG_AG_OBUF[0]),
         .O(SEG_AG[0]));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT4 #(
     .INIT(16'h92C8)) 
     \SEG_AG_OBUF[0]_inst_i_1 
@@ -207,7 +206,7 @@ end
   OBUF \SEG_AG_OBUF[1]_inst 
        (.I(SEG_AG_OBUF[1]),
         .O(SEG_AG[1]));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT4 #(
     .INIT(16'hEB08)) 
     \SEG_AG_OBUF[1]_inst_i_1 
@@ -219,19 +218,19 @@ end
   OBUF \SEG_AG_OBUF[2]_inst 
        (.I(SEG_AG_OBUF[2]),
         .O(SEG_AG[2]));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT4 #(
-    .INIT(16'hAA21)) 
+    .INIT(16'h88A9)) 
     \SEG_AG_OBUF[2]_inst_i_1 
        (.I0(\SEG_AG_OBUF[6]_inst_i_2_n_0 ),
-        .I1(\SEG_AG_OBUF[6]_inst_i_5_n_0 ),
+        .I1(\SEG_AG_OBUF[6]_inst_i_4_n_0 ),
         .I2(\SEG_AG_OBUF[6]_inst_i_3_n_0 ),
-        .I3(\SEG_AG_OBUF[6]_inst_i_4_n_0 ),
+        .I3(\SEG_AG_OBUF[6]_inst_i_5_n_0 ),
         .O(SEG_AG_OBUF[2]));
   OBUF \SEG_AG_OBUF[3]_inst 
        (.I(SEG_AG_OBUF[3]),
         .O(SEG_AG[3]));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT4 #(
     .INIT(16'hBE4A)) 
     \SEG_AG_OBUF[3]_inst_i_1 
@@ -243,13 +242,13 @@ end
   OBUF \SEG_AG_OBUF[4]_inst 
        (.I(SEG_AG_OBUF[4]),
         .O(SEG_AG[4]));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT4 #(
-    .INIT(16'hD6C4)) 
+    .INIT(16'hD6D0)) 
     \SEG_AG_OBUF[4]_inst_i_1 
        (.I0(\SEG_AG_OBUF[6]_inst_i_2_n_0 ),
-        .I1(\SEG_AG_OBUF[6]_inst_i_3_n_0 ),
-        .I2(\SEG_AG_OBUF[6]_inst_i_5_n_0 ),
+        .I1(\SEG_AG_OBUF[6]_inst_i_5_n_0 ),
+        .I2(\SEG_AG_OBUF[6]_inst_i_3_n_0 ),
         .I3(\SEG_AG_OBUF[6]_inst_i_4_n_0 ),
         .O(SEG_AG_OBUF[4]));
   OBUF \SEG_AG_OBUF[5]_inst 
@@ -266,7 +265,7 @@ end
   OBUF \SEG_AG_OBUF[6]_inst 
        (.I(SEG_AG_OBUF[6]),
         .O(SEG_AG[6]));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT4 #(
     .INIT(16'hA568)) 
     \SEG_AG_OBUF[6]_inst_i_1 
@@ -275,256 +274,240 @@ end
         .I2(\SEG_AG_OBUF[6]_inst_i_4_n_0 ),
         .I3(\SEG_AG_OBUF[6]_inst_i_5_n_0 ),
         .O(SEG_AG_OBUF[6]));
-  LUT6 #(
-    .INIT(64'h8888888888088888)) 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT5 #(
+    .INIT(32'h40444444)) 
     \SEG_AG_OBUF[6]_inst_i_10 
-       (.I0(counter_multiplexor[1]),
-        .I1(counter_multiplexor[0]),
-        .I2(\SEG_AG_OBUF[6]_inst_i_22_n_0 ),
-        .I3(current_dato_bcd[15]),
-        .I4(\SEG_AG_OBUF[6]_inst_i_19_n_0 ),
-        .I5(\SEG_AG_OBUF[6]_inst_i_24_n_0 ),
+       (.I0(counter_multiplexor[0]),
+        .I1(counter_multiplexor[1]),
+        .I2(current_dato_bcd[11]),
+        .I3(\SEG_AG_OBUF[6]_inst_i_7_n_0 ),
+        .I4(\SEG_AG_OBUF[6]_inst_i_16_n_0 ),
         .O(\SEG_AG_OBUF[6]_inst_i_10_n_0 ));
   LUT6 #(
-    .INIT(64'hAA8AAA8AAA8AAAAA)) 
+    .INIT(64'hFFFFFFFF0000D500)) 
     \SEG_AG_OBUF[6]_inst_i_11 
-       (.I0(\SEG_AG_OBUF[6]_inst_i_25_n_0 ),
-        .I1(current_dato_bcd[11]),
-        .I2(\SEG_AG_OBUF[6]_inst_i_19_n_0 ),
-        .I3(\SEG_AG_OBUF[6]_inst_i_24_n_0 ),
-        .I4(\SEG_AG_OBUF[6]_inst_i_22_n_0 ),
-        .I5(current_dato_bcd[15]),
+       (.I0(\SEG_AG_OBUF[6]_inst_i_16_n_0 ),
+        .I1(\SEG_AG_OBUF[6]_inst_i_7_n_0 ),
+        .I2(current_dato_bcd[8]),
+        .I3(counter_multiplexor[1]),
+        .I4(counter_multiplexor[0]),
+        .I5(\SEG_AG_OBUF[6]_inst_i_20_n_0 ),
         .O(\SEG_AG_OBUF[6]_inst_i_11_n_0 ));
   LUT6 #(
-    .INIT(64'hFBFB000000000C00)) 
+    .INIT(64'h0000000000010000)) 
     \SEG_AG_OBUF[6]_inst_i_12 
-       (.I0(\SEG_AG_OBUF[6]_inst_i_26_n_0 ),
-        .I1(\SEG_AG_OBUF[6]_inst_i_19_n_0 ),
-        .I2(\SEG_AG_OBUF[6]_inst_i_24_n_0 ),
-        .I3(current_dato_bcd[0]),
-        .I4(counter_multiplexor[0]),
-        .I5(counter_multiplexor[1]),
+       (.I0(current_dato_bcd[7]),
+        .I1(current_dato_bcd[6]),
+        .I2(current_dato_bcd[5]),
+        .I3(current_dato_bcd[4]),
+        .I4(\SEG_AG_OBUF[6]_inst_i_7_n_0 ),
+        .I5(\SEG_AG_OBUF[6]_inst_i_16_n_0 ),
         .O(\SEG_AG_OBUF[6]_inst_i_12_n_0 ));
   LUT6 #(
-    .INIT(64'hFFA8A8A8FFFFFFFF)) 
+    .INIT(64'hFF3F00000000AFAF)) 
     \SEG_AG_OBUF[6]_inst_i_13 
-       (.I0(current_dato_bcd[11]),
-        .I1(current_dato_bcd[10]),
-        .I2(current_dato_bcd[9]),
-        .I3(\SEG_AG_OBUF[6]_inst_i_20_n_0 ),
-        .I4(current_dato_bcd[15]),
-        .I5(\SEG_AG_OBUF[6]_inst_i_19_n_0 ),
-        .O(\SEG_AG_OBUF[6]_inst_i_13_n_0 ));
-  LUT6 #(
-    .INIT(64'hF7F7F7F3FFFFFFFF)) 
-    \SEG_AG_OBUF[6]_inst_i_14 
-       (.I0(current_dato_bcd[8]),
-        .I1(\SEG_AG_OBUF[6]_inst_i_19_n_0 ),
-        .I2(\SEG_AG_OBUF[6]_inst_i_24_n_0 ),
-        .I3(\SEG_AG_OBUF[6]_inst_i_22_n_0 ),
-        .I4(current_dato_bcd[15]),
-        .I5(\SEG_AG_OBUF[6]_inst_i_25_n_0 ),
-        .O(\SEG_AG_OBUF[6]_inst_i_14_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFF300000000FBFB)) 
-    \SEG_AG_OBUF[6]_inst_i_15 
        (.I0(current_dato_bcd[2]),
-        .I1(\SEG_AG_OBUF[6]_inst_i_19_n_0 ),
-        .I2(\SEG_AG_OBUF[6]_inst_i_24_n_0 ),
-        .I3(\SEG_AG_OBUF[6]_inst_i_27_n_0 ),
+        .I1(\SEG_AG_OBUF[6]_inst_i_21_n_0 ),
+        .I2(\SEG_AG_OBUF[6]_inst_i_7_n_0 ),
+        .I3(current_dato_bcd[14]),
         .I4(counter_multiplexor[0]),
         .I5(counter_multiplexor[1]),
+        .O(\SEG_AG_OBUF[6]_inst_i_13_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT5 #(
+    .INIT(32'h40004444)) 
+    \SEG_AG_OBUF[6]_inst_i_14 
+       (.I0(counter_multiplexor[0]),
+        .I1(counter_multiplexor[1]),
+        .I2(current_dato_bcd[10]),
+        .I3(\SEG_AG_OBUF[6]_inst_i_7_n_0 ),
+        .I4(\SEG_AG_OBUF[6]_inst_i_16_n_0 ),
+        .O(\SEG_AG_OBUF[6]_inst_i_14_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT5 #(
+    .INIT(32'h0000AFC0)) 
+    \SEG_AG_OBUF[6]_inst_i_15 
+       (.I0(current_dato_bcd[5]),
+        .I1(current_dato_bcd[1]),
+        .I2(\SEG_AG_OBUF[6]_inst_i_7_n_0 ),
+        .I3(counter_multiplexor[0]),
+        .I4(counter_multiplexor[1]),
         .O(\SEG_AG_OBUF[6]_inst_i_15_n_0 ));
   LUT6 #(
-    .INIT(64'hF7F7F7F3FFFFFFFF)) 
+    .INIT(64'hFFFFFFFEFFFFFFFF)) 
     \SEG_AG_OBUF[6]_inst_i_16 
-       (.I0(current_dato_bcd[10]),
-        .I1(\SEG_AG_OBUF[6]_inst_i_19_n_0 ),
-        .I2(\SEG_AG_OBUF[6]_inst_i_24_n_0 ),
-        .I3(\SEG_AG_OBUF[6]_inst_i_22_n_0 ),
-        .I4(current_dato_bcd[15]),
-        .I5(\SEG_AG_OBUF[6]_inst_i_25_n_0 ),
-        .O(\SEG_AG_OBUF[6]_inst_i_16_n_0 ));
-  LUT6 #(
-    .INIT(64'h001000F0FFFFFFFF)) 
-    \SEG_AG_OBUF[6]_inst_i_17 
        (.I0(current_dato_bcd[15]),
         .I1(\SEG_AG_OBUF[6]_inst_i_22_n_0 ),
-        .I2(\SEG_AG_OBUF[6]_inst_i_19_n_0 ),
-        .I3(\SEG_AG_OBUF[6]_inst_i_24_n_0 ),
-        .I4(current_dato_bcd[9]),
-        .I5(\SEG_AG_OBUF[6]_inst_i_25_n_0 ),
+        .I2(\SEG_AG_OBUF[6]_inst_i_23_n_0 ),
+        .I3(current_dato_bcd[14]),
+        .I4(\SEG_AG_OBUF[6]_inst_i_18_n_0 ),
+        .I5(\SEG_AG_OBUF[6]_inst_i_24_n_0 ),
+        .O(\SEG_AG_OBUF[6]_inst_i_16_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT2 #(
+    .INIT(4'h1)) 
+    \SEG_AG_OBUF[6]_inst_i_17 
+       (.I0(current_dato_bcd[5]),
+        .I1(current_dato_bcd[6]),
         .O(\SEG_AG_OBUF[6]_inst_i_17_n_0 ));
   LUT6 #(
-    .INIT(64'hFBFB000000000C00)) 
+    .INIT(64'hFFFFFFE0E0E0E0E0)) 
     \SEG_AG_OBUF[6]_inst_i_18 
        (.I0(current_dato_bcd[13]),
-        .I1(\SEG_AG_OBUF[6]_inst_i_19_n_0 ),
-        .I2(\SEG_AG_OBUF[6]_inst_i_24_n_0 ),
-        .I3(current_dato_bcd[1]),
+        .I1(current_dato_bcd[14]),
+        .I2(current_dato_bcd[15]),
+        .I3(current_dato_bcd[9]),
+        .I4(current_dato_bcd[10]),
+        .I5(current_dato_bcd[11]),
+        .O(\SEG_AG_OBUF[6]_inst_i_18_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  LUT3 #(
+    .INIT(8'h01)) 
+    \SEG_AG_OBUF[6]_inst_i_19 
+       (.I0(current_dato_bcd[14]),
+        .I1(current_dato_bcd[12]),
+        .I2(current_dato_bcd[13]),
+        .O(\SEG_AG_OBUF[6]_inst_i_19_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFF700)) 
+    \SEG_AG_OBUF[6]_inst_i_2 
+       (.I0(\SEG_AG_OBUF[6]_inst_i_6_n_0 ),
+        .I1(\SEG_AG_OBUF[6]_inst_i_7_n_0 ),
+        .I2(current_dato_bcd[7]),
+        .I3(\SEG_AG_OBUF[6]_inst_i_8_n_0 ),
+        .I4(\SEG_AG_OBUF[6]_inst_i_9_n_0 ),
+        .I5(\SEG_AG_OBUF[6]_inst_i_10_n_0 ),
+        .O(\SEG_AG_OBUF[6]_inst_i_2_n_0 ));
+  LUT6 #(
+    .INIT(64'hFAFF000000000C00)) 
+    \SEG_AG_OBUF[6]_inst_i_20 
+       (.I0(\SEG_AG_OBUF[6]_inst_i_25_n_0 ),
+        .I1(current_dato_bcd[0]),
+        .I2(\SEG_AG_OBUF[6]_inst_i_18_n_0 ),
+        .I3(\SEG_AG_OBUF[6]_inst_i_24_n_0 ),
         .I4(counter_multiplexor[0]),
         .I5(counter_multiplexor[1]),
-        .O(\SEG_AG_OBUF[6]_inst_i_18_n_0 ));
+        .O(\SEG_AG_OBUF[6]_inst_i_20_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  LUT5 #(
+    .INIT(32'hFFFFFEFF)) 
+    \SEG_AG_OBUF[6]_inst_i_21 
+       (.I0(current_dato_bcd[12]),
+        .I1(current_dato_bcd[13]),
+        .I2(current_dato_bcd[15]),
+        .I3(\SEG_AG_OBUF[6]_inst_i_24_n_0 ),
+        .I4(\SEG_AG_OBUF[6]_inst_i_18_n_0 ),
+        .O(\SEG_AG_OBUF[6]_inst_i_21_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  LUT2 #(
+    .INIT(4'hE)) 
+    \SEG_AG_OBUF[6]_inst_i_22 
+       (.I0(current_dato_bcd[13]),
+        .I1(current_dato_bcd[12]),
+        .O(\SEG_AG_OBUF[6]_inst_i_22_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \SEG_AG_OBUF[6]_inst_i_23 
+       (.I0(current_dato_bcd[10]),
+        .I1(current_dato_bcd[9]),
+        .I2(current_dato_bcd[8]),
+        .I3(current_dato_bcd[11]),
+        .O(\SEG_AG_OBUF[6]_inst_i_23_n_0 ));
   LUT6 #(
     .INIT(64'h0000005757575757)) 
-    \SEG_AG_OBUF[6]_inst_i_19 
+    \SEG_AG_OBUF[6]_inst_i_24 
        (.I0(current_dato_bcd[7]),
         .I1(current_dato_bcd[5]),
         .I2(current_dato_bcd[6]),
         .I3(current_dato_bcd[1]),
         .I4(current_dato_bcd[2]),
         .I5(current_dato_bcd[3]),
-        .O(\SEG_AG_OBUF[6]_inst_i_19_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFF70)) 
-    \SEG_AG_OBUF[6]_inst_i_2 
-       (.I0(\SEG_AG_OBUF[6]_inst_i_6_n_0 ),
-        .I1(\SEG_AG_OBUF[6]_inst_i_7_n_0 ),
-        .I2(\SEG_AG_OBUF[6]_inst_i_8_n_0 ),
-        .I3(\SEG_AG_OBUF[6]_inst_i_9_n_0 ),
-        .I4(\SEG_AG_OBUF[6]_inst_i_10_n_0 ),
-        .I5(\SEG_AG_OBUF[6]_inst_i_11_n_0 ),
-        .O(\SEG_AG_OBUF[6]_inst_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
-  LUT2 #(
-    .INIT(4'hE)) 
-    \SEG_AG_OBUF[6]_inst_i_20 
-       (.I0(current_dato_bcd[13]),
-        .I1(current_dato_bcd[14]),
-        .O(\SEG_AG_OBUF[6]_inst_i_20_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
-  LUT2 #(
-    .INIT(4'hE)) 
-    \SEG_AG_OBUF[6]_inst_i_21 
-       (.I0(current_dato_bcd[9]),
-        .I1(current_dato_bcd[10]),
-        .O(\SEG_AG_OBUF[6]_inst_i_21_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
-  LUT3 #(
-    .INIT(8'hFE)) 
-    \SEG_AG_OBUF[6]_inst_i_22 
-       (.I0(current_dato_bcd[12]),
-        .I1(current_dato_bcd[14]),
-        .I2(current_dato_bcd[13]),
-        .O(\SEG_AG_OBUF[6]_inst_i_22_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
-  LUT3 #(
-    .INIT(8'hFE)) 
-    \SEG_AG_OBUF[6]_inst_i_23 
-       (.I0(current_dato_bcd[11]),
-        .I1(current_dato_bcd[10]),
-        .I2(current_dato_bcd[9]),
-        .O(\SEG_AG_OBUF[6]_inst_i_23_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFA8A8A8A8A8)) 
-    \SEG_AG_OBUF[6]_inst_i_24 
-       (.I0(current_dato_bcd[15]),
-        .I1(current_dato_bcd[13]),
-        .I2(current_dato_bcd[14]),
-        .I3(current_dato_bcd[9]),
-        .I4(current_dato_bcd[10]),
-        .I5(current_dato_bcd[11]),
         .O(\SEG_AG_OBUF[6]_inst_i_24_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  LUT4 #(
+    .INIT(16'hAAAB)) 
     \SEG_AG_OBUF[6]_inst_i_25 
-       (.I0(counter_multiplexor[1]),
-        .I1(counter_multiplexor[0]),
-        .O(\SEG_AG_OBUF[6]_inst_i_25_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
-  LUT4 #(
-    .INIT(16'hAAAB)) 
-    \SEG_AG_OBUF[6]_inst_i_26 
        (.I0(current_dato_bcd[12]),
-        .I1(current_dato_bcd[13]),
-        .I2(current_dato_bcd[14]),
-        .I3(current_dato_bcd[15]),
-        .O(\SEG_AG_OBUF[6]_inst_i_26_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
-  LUT4 #(
-    .INIT(16'hAAAB)) 
-    \SEG_AG_OBUF[6]_inst_i_27 
-       (.I0(current_dato_bcd[14]),
-        .I1(current_dato_bcd[13]),
-        .I2(current_dato_bcd[12]),
-        .I3(current_dato_bcd[15]),
-        .O(\SEG_AG_OBUF[6]_inst_i_27_n_0 ));
+        .I1(current_dato_bcd[15]),
+        .I2(current_dato_bcd[13]),
+        .I3(current_dato_bcd[14]),
+        .O(\SEG_AG_OBUF[6]_inst_i_25_n_0 ));
   LUT6 #(
-    .INIT(64'hEEEAEEEEFFFFFFFF)) 
+    .INIT(64'hAEAEAEAEAEAAAEAE)) 
     \SEG_AG_OBUF[6]_inst_i_3 
-       (.I0(\SEG_AG_OBUF[6]_inst_i_12_n_0 ),
-        .I1(\SEG_AG_OBUF[6]_inst_i_8_n_0 ),
-        .I2(current_dato_bcd[4]),
-        .I3(\SEG_AG_OBUF[6]_inst_i_13_n_0 ),
+       (.I0(\SEG_AG_OBUF[6]_inst_i_11_n_0 ),
+        .I1(counter_multiplexor[0]),
+        .I2(counter_multiplexor[1]),
+        .I3(current_dato_bcd[4]),
         .I4(\SEG_AG_OBUF[6]_inst_i_7_n_0 ),
-        .I5(\SEG_AG_OBUF[6]_inst_i_14_n_0 ),
+        .I5(\SEG_AG_OBUF[6]_inst_i_12_n_0 ),
         .O(\SEG_AG_OBUF[6]_inst_i_3_n_0 ));
   LUT6 #(
-    .INIT(64'hAAEAEEEEFFFFFFFF)) 
+    .INIT(64'hFEFEFEFEFEEEEEEE)) 
     \SEG_AG_OBUF[6]_inst_i_4 
-       (.I0(\SEG_AG_OBUF[6]_inst_i_15_n_0 ),
-        .I1(\SEG_AG_OBUF[6]_inst_i_8_n_0 ),
-        .I2(current_dato_bcd[6]),
-        .I3(\SEG_AG_OBUF[6]_inst_i_13_n_0 ),
-        .I4(\SEG_AG_OBUF[6]_inst_i_7_n_0 ),
-        .I5(\SEG_AG_OBUF[6]_inst_i_16_n_0 ),
+       (.I0(\SEG_AG_OBUF[6]_inst_i_13_n_0 ),
+        .I1(\SEG_AG_OBUF[6]_inst_i_14_n_0 ),
+        .I2(\SEG_AG_OBUF[6]_inst_i_8_n_0 ),
+        .I3(\SEG_AG_OBUF[6]_inst_i_7_n_0 ),
+        .I4(current_dato_bcd[6]),
+        .I5(\SEG_AG_OBUF[6]_inst_i_12_n_0 ),
         .O(\SEG_AG_OBUF[6]_inst_i_4_n_0 ));
   LUT6 #(
-    .INIT(64'h00000000555DDDDD)) 
+    .INIT(64'h000000003733BF33)) 
     \SEG_AG_OBUF[6]_inst_i_5 
-       (.I0(\SEG_AG_OBUF[6]_inst_i_7_n_0 ),
-        .I1(\SEG_AG_OBUF[6]_inst_i_17_n_0 ),
-        .I2(\SEG_AG_OBUF[6]_inst_i_13_n_0 ),
-        .I3(current_dato_bcd[5]),
-        .I4(\SEG_AG_OBUF[6]_inst_i_8_n_0 ),
-        .I5(\SEG_AG_OBUF[6]_inst_i_18_n_0 ),
+       (.I0(counter_multiplexor[0]),
+        .I1(counter_multiplexor[1]),
+        .I2(current_dato_bcd[9]),
+        .I3(\SEG_AG_OBUF[6]_inst_i_7_n_0 ),
+        .I4(current_dato_bcd[13]),
+        .I5(\SEG_AG_OBUF[6]_inst_i_15_n_0 ),
         .O(\SEG_AG_OBUF[6]_inst_i_5_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000044404440444)) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT5 #(
+    .INIT(32'hFFFFFFFB)) 
     \SEG_AG_OBUF[6]_inst_i_6 
-       (.I0(current_dato_bcd[7]),
-        .I1(\SEG_AG_OBUF[6]_inst_i_19_n_0 ),
-        .I2(current_dato_bcd[15]),
-        .I3(\SEG_AG_OBUF[6]_inst_i_20_n_0 ),
-        .I4(\SEG_AG_OBUF[6]_inst_i_21_n_0 ),
-        .I5(current_dato_bcd[11]),
+       (.I0(\SEG_AG_OBUF[6]_inst_i_16_n_0 ),
+        .I1(\SEG_AG_OBUF[6]_inst_i_7_n_0 ),
+        .I2(current_dato_bcd[4]),
+        .I3(current_dato_bcd[5]),
+        .I4(current_dato_bcd[6]),
         .O(\SEG_AG_OBUF[6]_inst_i_6_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFFFFFEFFFF)) 
+    .INIT(64'h0000000057005757)) 
     \SEG_AG_OBUF[6]_inst_i_7 
-       (.I0(current_dato_bcd[15]),
-        .I1(\SEG_AG_OBUF[6]_inst_i_22_n_0 ),
-        .I2(\SEG_AG_OBUF[6]_inst_i_23_n_0 ),
-        .I3(current_dato_bcd[8]),
-        .I4(\SEG_AG_OBUF[6]_inst_i_19_n_0 ),
-        .I5(\SEG_AG_OBUF[6]_inst_i_24_n_0 ),
+       (.I0(current_dato_bcd[3]),
+        .I1(current_dato_bcd[2]),
+        .I2(current_dato_bcd[1]),
+        .I3(\SEG_AG_OBUF[6]_inst_i_17_n_0 ),
+        .I4(current_dato_bcd[7]),
+        .I5(\SEG_AG_OBUF[6]_inst_i_18_n_0 ),
         .O(\SEG_AG_OBUF[6]_inst_i_7_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \SEG_AG_OBUF[6]_inst_i_8 
        (.I0(counter_multiplexor[0]),
         .I1(counter_multiplexor[1]),
         .O(\SEG_AG_OBUF[6]_inst_i_8_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT5 #(
-    .INIT(32'h11101111)) 
+  LUT6 #(
+    .INIT(64'hFFCF00000000AFAF)) 
     \SEG_AG_OBUF[6]_inst_i_9 
-       (.I0(counter_multiplexor[1]),
-        .I1(counter_multiplexor[0]),
-        .I2(current_dato_bcd[3]),
-        .I3(\SEG_AG_OBUF[6]_inst_i_24_n_0 ),
-        .I4(\SEG_AG_OBUF[6]_inst_i_19_n_0 ),
+       (.I0(current_dato_bcd[3]),
+        .I1(current_dato_bcd[15]),
+        .I2(\SEG_AG_OBUF[6]_inst_i_7_n_0 ),
+        .I3(\SEG_AG_OBUF[6]_inst_i_19_n_0 ),
+        .I4(counter_multiplexor[0]),
+        .I5(counter_multiplexor[1]),
         .O(\SEG_AG_OBUF[6]_inst_i_9_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT2 #(
     .INIT(4'h9)) 
     \counter_multiplexor[0]_i_1 
        (.I0(\counter_prescaler[4]_i_2_n_0 ),
         .I1(counter_multiplexor[0]),
         .O(\counter_multiplexor[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT3 #(
     .INIT(8'hD2)) 
     \counter_multiplexor[1]_i_1 
@@ -553,7 +536,7 @@ end
     \counter_prescaler[0]_i_1 
        (.I0(\counter_prescaler_reg_n_0_[0] ),
         .O(counter_prescaler[0]));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT3 #(
     .INIT(8'h28)) 
     \counter_prescaler[1]_i_1 
@@ -561,7 +544,7 @@ end
         .I1(\counter_prescaler_reg_n_0_[1] ),
         .I2(\counter_prescaler_reg_n_0_[0] ),
         .O(counter_prescaler[1]));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT4 #(
     .INIT(16'h2888)) 
     \counter_prescaler[2]_i_1 
@@ -570,7 +553,7 @@ end
         .I2(\counter_prescaler_reg_n_0_[0] ),
         .I3(\counter_prescaler_reg_n_0_[1] ),
         .O(counter_prescaler[2]));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT5 #(
     .INIT(32'h28888888)) 
     \counter_prescaler[3]_i_1 
@@ -600,7 +583,7 @@ end
         .I4(\counter_prescaler_reg_n_0_[6] ),
         .I5(\counter_prescaler_reg_n_0_[7] ),
         .O(\counter_prescaler[4]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT4 #(
     .INIT(16'hAA6A)) 
     \counter_prescaler[5]_i_1 
@@ -609,7 +592,7 @@ end
         .I2(\counter_prescaler_reg_n_0_[1] ),
         .I3(\counter_prescaler[7]_i_2_n_0 ),
         .O(counter_prescaler[5]));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT5 #(
     .INIT(32'hAAAA6AAA)) 
     \counter_prescaler[6]_i_1 
@@ -629,7 +612,7 @@ end
         .I4(\counter_prescaler_reg_n_0_[6] ),
         .I5(\counter_prescaler[7]_i_2_n_0 ),
         .O(counter_prescaler[7]));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT3 #(
     .INIT(8'h7F)) 
     \counter_prescaler[7]_i_2 
