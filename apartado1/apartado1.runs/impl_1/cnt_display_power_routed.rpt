@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Sun Mar 12 11:00:57 2023
+| Date             : Sat Apr  1 12:25:21 2023
 | Host             : LAPTOP-BQSK3RO4 running 64-bit major release  (build 9200)
 | Command          : report_power -file cnt_display_power_routed.rpt -pb cnt_display_power_summary_routed.pb -rpx cnt_display_power_routed.rpx
 | Design           : cnt_display
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.755        |
+| Total On-Chip Power (W)  | 1.761        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.681        |
+| Dynamic (W)              | 1.687        |
 | Device Static (W)        | 0.074        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 76.2         |
@@ -52,15 +52,15 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.178 |       77 |       --- |             --- |
-|   LUT as Logic |     0.164 |       36 |     20800 |            0.17 |
+| Slice Logic    |     0.140 |       75 |       --- |             --- |
+|   LUT as Logic |     0.126 |       33 |     20800 |            0.16 |
 |   Register     |     0.008 |       26 |     41600 |            0.06 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |        1 |       --- |             --- |
-| Signals        |     0.183 |       86 |       --- |             --- |
-| I/O            |     1.320 |       31 |       106 |           29.25 |
+| Signals        |     0.185 |       84 |       --- |             --- |
+| I/O            |     1.363 |       31 |       106 |           29.25 |
 | Static Power   |     0.074 |          |           |                 |
-| Total          |     1.755 |          |           |                 |
+| Total          |     1.761 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,11 +70,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.442 |       0.429 |      0.013 |
-| Vccaux    |       1.800 |     0.115 |       0.102 |      0.013 |
+| Vccint    |       1.000 |     0.406 |       0.392 |      0.013 |
+| Vccaux    |       1.800 |     0.119 |       0.106 |      0.013 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.594 |       0.593 |      0.001 |
+| Vcco18    |       1.800 |     0.614 |       0.613 |      0.001 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
@@ -137,7 +137,7 @@ Table of Contents
 +-------------+-----------+
 | Name        | Power (W) |
 +-------------+-----------+
-| cnt_display |     1.681 |
+| cnt_display |     1.687 |
 +-------------+-----------+
 
 

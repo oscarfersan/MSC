@@ -15,7 +15,8 @@ end cnt_display;
 
 architecture rtl of cnt_display is
   constant CTE_DISP: integer := 600; -- Division de señal de reloj en la entidad global
-  constant CTE_DIGITO: integer:= 150; -- Division de la señal de reloj para ir cambiando cada uno de los displays. Este valor es CTE_DISP / 4
+  constant nDisplays: integer := 4; -- Numero de displays a mostrar
+  constant CTE_DIGITO: integer:= CTE_DISP/nDisplays; -- Division de la señal de reloj para ir cambiando cada uno de los displays. Este valor es CTE_DISP / 4
 
   -- Valores para implementacion
   --constant CTE_DISP: integer := 600000;
@@ -109,7 +110,7 @@ begin  -- rtl
           multiplexor_out <= checked_dato_bcd(3 downto 0);
         end if;
       when 1 =>
-        if checked_dato_bcd(15 downto 12) = x"0" and checked_dato_bcd(11 downto 8) = x"0" then
+        if checked_dato_bcd(15 downto 12) = x"0" and checked_dato_bcd(11 downto 8) = x"0" and checked_dato_bcd(7 downto 4) = x"0" then
           multiplexor_out <= x"D"; -- Usar D para no mostrar
         elsif checked_dato_bcd(7 downto 4) = x"F" then
           multiplexor_out <= x"B"; -- Enseñar I
@@ -117,7 +118,7 @@ begin  -- rtl
           multiplexor_out <= checked_dato_bcd(7 downto 4);
         end if;
       when 2 =>
-        if checked_dato_bcd(15 downto 12) = x"0" then
+        if checked_dato_bcd(15 downto 12) = x"0" and checked_dato_bcd(11 downto 8) = x"0" then
           multiplexor_out <= x"D"; -- Usar D para no mostrar
         elsif checked_dato_bcd(11 downto 8) = x"F" then
           multiplexor_out <= x"A"; -- Enseñar A

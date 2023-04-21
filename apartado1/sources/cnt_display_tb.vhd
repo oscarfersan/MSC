@@ -13,7 +13,7 @@ end cnt_display_tb;
 
 architecture sim of cnt_display_tb is
 
-  constant CNT1 : time:= 7000ns;                 -- Indicar valor
+  constant CNT1 : time:= 9000ns;                 -- Indicar valor. 9000 ns para que el valor del display se muestre un poco mas de tiempo. Anteriormente 7000 ns
 
   signal CLK_i         : std_logic := '0';
   signal RST_i         : std_logic;
@@ -95,7 +95,7 @@ begin  -- sim
 
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '1';
-    DATO_BCD_i    <=   x"4839"  ;-- Indicar valor
+    DATO_BCD_i    <=   x"4039"  ;-- Indicar valor
     wait until CLK_i = '0';
     DATO_BCD_OK_i <= '0';
     wait for CNT1;
