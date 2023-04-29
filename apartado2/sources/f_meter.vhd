@@ -50,6 +50,13 @@ begin
   elsif clk'event and clk = '1' then
     if ce_prescaler = '1' then -- Señal Load
       bcd_register <= std_logic_vector(millares&centenas&decenas&unidades);
+
+      -- Limpiar Registro para volver a comenzar la cuenta
+      unidades <= (others => '0');
+      decenas <=(others =>'0');
+      centenas <=(others => '0');
+      millares <= (others => '0');
+      
     elsif F_OUT = '1' then
       unidades <= unidades + 1;
       if unidades = 9 then
