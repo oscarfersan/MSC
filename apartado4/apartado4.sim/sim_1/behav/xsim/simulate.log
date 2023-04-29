@@ -1,0 +1,5 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+Failure: FIN CONTROLADO DE LA SIMULACION
+Time: 5310 ns  Iteration: 0  Process: /dac_controller_tb/line__52  File: C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado4/sources/dac_controller_tb.vhd
+$finish called at time : 5310 ns : File "C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado4/sources/dac_controller_tb.vhd" Line 91

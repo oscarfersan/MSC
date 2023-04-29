@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Apr 24 08:39:41 2023
+# Process ID: 4616
+# Current directory: C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado4/apartado4.runs/synth_1
+# Command line: vivado.exe -log test_dac_controlller.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_dac_controlller.tcl
+# Log file: C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado4/apartado4.runs/synth_1/test_dac_controlller.vds
+# Journal file: C:/Users/oscar/OneDrive/Escritorio/UNIVERSIDAD/MSC_22_23/MSC/apartado4/apartado4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source test_dac_controlller.tcl -notrace

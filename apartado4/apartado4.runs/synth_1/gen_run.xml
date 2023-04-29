@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1682318378">
+  <File Type="PA-TCL" Name="test_dac_controlller.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="test_dac_controlller_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="test_dac_controlller_reports.tcl"/>
+  <File Type="RDS-RDS" Name="test_dac_controlller.vds"/>
+  <File Type="RDS-UTIL" Name="test_dac_controlller_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="test_dac_controlller_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="test_dac_controlller.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="test_dac_controlller_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="test_dac_controlller_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/sources/dac_controller.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sources/test_dac_controller.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="test_dac_controlller"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/sources/test_dac_controller.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
